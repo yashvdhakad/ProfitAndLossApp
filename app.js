@@ -4,9 +4,9 @@ const currentPrice = document.querySelector("#currentPrice");
 const checkBtn = document.querySelector("#checkBtn");
 const outputBox = document.querySelector("#outputBox");
 
-const stockQuantity = quantity.value;
-const buyingValue = (buyingPrice.value)*stockQuantity;
-const currentValue = (currentPrice.value)*stockQuantity;
+const stockQuantity = Number(quantity.value);
+const buyingValue = Number(buyingPrice.value)*stockQuantity;
+const currentValue = Number(currentPrice.value)*stockQuantity;
 
 const calculateProfitAndLoss = () => {
     if (currentValue > buyingValue) {
