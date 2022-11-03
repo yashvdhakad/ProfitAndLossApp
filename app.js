@@ -12,13 +12,13 @@ const calculateProfitAndLoss = () => {
     if (currentValue > buyingValue) {
         const profit = currentValue - buyingValue;
         const profitPercentage = (profit/buyingValue)*100;
-        outputBox.innerText = `Your profit is ${profit} and your profit pecentage is ${profitPercentage}%.`;
+        outputBox.innerText = `Your profit is ${profit} and your profit percentage is ${profitPercentage}%.`;
     } else if (currentValue === buyingValue) {
         outputBox.innerText = `no pain no gain no gain no pain`;
     } else {
         const loss = buyingValue - currentValue;
         const lossPercentage = (loss/buyingValue)*100;
-        outputBox.innerText = `Your loss is ${loss} and your loss pecentage is ${lossPercentage}%.`;
+        outputBox.innerText = `Your loss is ${loss} and your loss percentage is ${lossPercentage}%.`;
     }
 }
 
